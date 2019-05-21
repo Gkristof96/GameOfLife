@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Game of Life</title>
+	<script type="text/javascript" src="gof.js"></script>
+	<style>
+	canvas {border: 2px solid black;}
+	</style>
+  </head>
+  <body onload="drawLine()">
+    <div style="float: left;text-align: center;width:150px">
+		<button type="button" id="myButton3" onclick="start()">Start</button><br><br>
+		<button type="button" id="myButton4" onclick="stop()">Stop</button><br><br>
+		<button type="button" id="myButton2" onclick="main()">Next</button><br><br>
+		<button onclick="moveUp()">/\</button><br><br>
+		<button onclick="moveLeft()"><</button>
+		<button onclick="moveRight()">></button><br><br>
+		<button onclick="moveDown()">\/</button><br><br>
+		<button onclick="location.reload()">reload</button>
+	</div>
+    <script>
+	  startGame();
+	</script>
+  </body>
+</html>
